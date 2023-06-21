@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.body-dark{
+    background-color: black;
+}
+
+.menu{
+    
+    list-style: none;
+    background-color: rebeccapurple;
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 2px solid cornflowerblue;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 30%;
+    padding: 1rem;
+    transition: ease 0.5s;
+
+    box-shadow: -1px 5px 13px 0px royalblue;
+}
+
+.card-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.card-titulo{
+    text-align: center;
+    color: cyan;
+
+}
+
+.card-descricao{
+    text-align: justify;
+    font-size: 0.8rem;
+    flex-grow: 1;
+}
+.card-button{
+    width:50%;
+    background-color: blue;
+    border: 3px solid;
+    border-radius: 0.5rem;
+
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    cursor:pointer;
+
+    transition: 0ms;
+}
+
+.card-button:radius{
+    background-color: transparent;
+    color: blueviolet;
+}
+
+@media (max-width: 600px){
+    .container{
+        background-color: pink;
+    }
+
+    *{
+        font-size: 22px;
+    }
+    .card{
+        width: 80%;
+    }
+}
+
+@media (min-width: 601px)and(max-width: 801px){
+    .container{
+        background-color: greenyellow;
+    }
+
+    *{
+        font-size: 20px;
+    }
+    .card{
+        width: 40%;
+    }
+}
